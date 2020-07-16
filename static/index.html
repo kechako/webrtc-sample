@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebRTC Test</title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <h1>WebRTC Test</h1>
+
+    <ul class="control-buttons">
+      <li><button id="connect-offer" disabled>Connect as Offer</button></li>
+      <li><button id="connect-answer" disabled>Connect as Answer</button></li>
+      <li><button id="read-sdp" disabled>Read SDP</button></li>
+    </ul>
+
+    <div id="video-box">
+      <video id="preview"></video>
+    </div>
+
+    <div class="sdp-box">
+      <div class="sdp">
+        <p>
+          <label>SDP to send</label>
+          <button id="copy">Copy to clipboard</button>
+        </p>
+        <textarea id="sdp-send" readonly></textarea>
+      </div>
+      <div class="sdp">
+        <p>
+          <label>SDP received</label>
+        </p>
+        <textarea id="sdp-read"></textarea>
+      </div>
+    </div>
+
+    <ul id="logs">
+    </ul>
+
+  </body>
+</html>

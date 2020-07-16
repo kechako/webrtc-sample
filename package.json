@@ -1,0 +1,15 @@
+{
+  "name": "webrtc-sample",
+  "version": "1.0.0",
+  "description": "A sample application for WebRTC.",
+  "main": "index.js",
+  "repository": "https://github.com/SpiralMindJP/webrtc-sample",
+  "author": "Ryosuke Akiyama <ryosuke.akiyama@spiralmind.jp>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.9.6"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}

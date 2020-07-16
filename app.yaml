@@ -1,0 +1,16 @@
+runtime: php55
+api_version: 1
+
+instance_class: B1
+basic_scaling:
+  max_instances: 1
+  idle_timeout: 1m
+
+handlers:
+- url: /
+  static_files: static/index.html
+  upload: static/index.html
+
+- url: /(.*)
+  static_files: static/\1
+  upload: static/(.*)

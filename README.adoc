@@ -1,0 +1,21 @@
+= WebRTC Sample
+
+== Required
+
+* nodejs
+* yarn
+
+== Build
+
+[source, console]
+----
+$ yarn
+$ yarn build
+----
+
+== Deploy to GAE
+
+[source, console]
+----
+$ gcloud app deploy --project=(your project name)
+----
